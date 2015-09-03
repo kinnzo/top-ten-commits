@@ -1,0 +1,7 @@
+{
+  "name": "top-ten-commits",
+  "version": "0.0.1",
+  "author": "Ganesha Upadhyaya",
+  "description": "Displays top 10 commits per number of files changed as a bar chart.",
+  "main": "main.html"
+}
