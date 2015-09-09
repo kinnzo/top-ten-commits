@@ -25,7 +25,7 @@ let canvas = document.createElement('canvas');
 canvas.setAttribute('width', '400px');
 canvas.setAttribute('height', '300px');
 canvas.id = "chart-output";
-content.appendChild(canvas);
+$('#content').prepend(canvas);
 
 let ctx = canvas.getContext('2d');
 new Chart(ctx).Bar(chartData, { 'responsive': true, });
