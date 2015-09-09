@@ -3,7 +3,7 @@
   "productName": "Top Ten Commits.",
   "version": "0.1.1",
   "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
-  "description": "Displays top 10 commits per number of files changed as a bar chart.",
+  "description": "Displays top 10 commits based on number of files changed as a bar chart.",
   "main": "main.html",
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-'use strict';	
+'use strict';
 let json = api.boa.run('top-ten-commits.boa');
 $('#loading').hide();
 $('#content').show();
@@ -7,7 +7,7 @@ let labels = [];
 let dataset = [];
 for(let index in json.out["[]"]) {
 	count++;
-	let label = 
+	let label =
 		$('#table-output-body').append(`<tr><td> ${count} </td> <td> ${index} </td> <td> ${json.out["[]"][index]} </td> </tr>`)
 		labels.push(index);
 	dataset.push(json.out["[]"][index]);
@@ -28,8 +28,4 @@ canvas.id = "chart-output";
 content.appendChild(canvas);
 
 let ctx = canvas.getContext('2d');
-new Chart(ctx).Bar(chartData);
-
-
-
-
+new Chart(ctx).Bar(chartData, { 'responsive': true, });
